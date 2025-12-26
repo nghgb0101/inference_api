@@ -1,22 +1,9 @@
-# --- CẤU HÌNH TẢI PYTORCH GPU (BẮT BUỘC) ---
---extra-index-url https://download.pytorch.org/whl/cu121
+torch>=2.1.0
+transformers>=4.44.0
+accelerate>=0.33.0
+bitsandbytes>=0.43.0
 
-# --- CORE AI ENGINE (ĐỂ CHẠY MODEL) ---
-torch==2.5.1
-torchvision==0.20.1
-torchaudio==2.5.1
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
 
-# --- HUGGING FACE & GPTQ (ĐỂ ĐỌC MODEL NÉN) ---
-transformers>=4.43.3
-accelerate>=0.32.0
-optimum>=1.21.0
-auto-gptq>=0.7.1
-
-# --- API SERVER (THÀNH PHẦN MỚI) ---
-fastapi          # Framework để tạo API
-uvicorn          # Server để chạy API
-pydantic         # Để kiểm tra dữ liệu đầu vào (User input)
-requests         # (Tùy chọn) Để viết code test thử API
-
-# --- TIỆN ÍCH ---
-tqdm
+pydantic>=2.7.0
